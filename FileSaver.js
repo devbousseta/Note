@@ -39,7 +39,26 @@ function download() {
 //     await writableStream.write(text);
 //     await writableStream.close();
 //   }
+  //donwload pdf
+  function downloadAsPDF() {
+    var text = document.getElementById("my-textarea").value;
+    var title = document.getElementById("title").value;
+    var container = document.createElement("div");
+    container.style.padding = "40px"; // Adjust the padding value as needed
+    container.innerText = text;
+    if(title != ''){
+
+        html2pdf().from(container).save(title + ".pdf");
+    }else{
+        html2pdf().from(container).save("File.pdf");
+    }
+    
+  }
   
+  
+  
+
+
 
 /*--- Change Direction  ---*/
 
