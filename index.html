@@ -43,6 +43,8 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
+<!-- jsPDF library -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
 
 
 
@@ -158,8 +160,6 @@ body {
 
 	font-family: 'Tajawal', sans-serif;
 
-
-
 	height:28px;
 
 	font-weight:500;
@@ -169,6 +169,29 @@ body {
 	margin-right: 10px;
 
 }
+#extention
+{
+	background-color:transparent;
+
+	border-bottom:3px solid #FFF;
+
+	color:#FFF;
+
+	font-size:20px;
+
+	font-family: 'Tajawal', sans-serif;
+
+	height:28px;
+
+	font-weight:500;
+
+	width:40px;
+
+	margin-right: 10px;
+	margin-left: -15px;
+
+}
+
 
 #button {
 
@@ -541,7 +564,10 @@ footer{
 					<li ><a href="#" style="color: #F4D03F ;text-decoration: none;"><botton  type="button"  id="compress"><span class="fa-solid fa-compress" style="font-size:large"></span> Minimize</botton> </a></li>
 				</div>
 				<div  class="col-md mt-2" id="title-col">
-					<div class="title-bar d-flex justify-content-end"><div id="margin"><input id="title" type="text" placeholder="Title here " style="text-align: center !important;" name="title"></div></div>
+					<div class="title-bar d-flex justify-content-end"><div id="margin">
+						<input id="title" type="text" placeholder="Title here " style="text-align: center !important;" name="title">
+						<input id="extention" type="text" placeholder="txt" style="text-align: center !important;" name="extention">
+					</div></div>
 			   </div>
 			
 				
